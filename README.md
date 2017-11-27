@@ -1,1 +1,1 @@
-# spring-data-graphql
+# Spring Data GraphQL Reactive
