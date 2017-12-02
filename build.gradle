@@ -4,10 +4,17 @@ version = '0.0.1'
 apply plugin: 'java'
 apply plugin: 'maven'
 
+sourceCompatibility = 1.8
+
 repositories {
-    jcenter()
+    mavenLocal()
+    mavenCentral()
+    maven { url "https://repo.spring.io/snapshot" }
+    maven { url "https://repo.spring.io/milestone" }
 }
 
 dependencies {
-
+    compile 'org.springframework.boot:spring-boot:2.0.0.M6'
+    compile "org.springframework:spring-webflux:5.0.2.RELEASE"
+    compile 'com.graphql-java:graphql-java:6.0'
 }
